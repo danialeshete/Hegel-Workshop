@@ -1,0 +1,22 @@
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: lightgrey;
+    text-align: center;
+}
+a {
+    color: yellow;
+}
+ul {
+    color: lightblue;
+    font-size:16px;
+}
+
+.intro {
+    font-size: 18px;
+    line-height: 1.5;
+}
