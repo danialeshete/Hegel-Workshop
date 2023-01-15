@@ -10,8 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src=".bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
+
     <script src="script.js"></script>
 
     <title>Startseite</title>
@@ -19,42 +21,40 @@
 
 <body class="bg-light">
     <div class="container ">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg sticky-top bg-light ms-auto">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
+                <a class="navbar-brand" href="#">
+                    <p class="fs-4">
+                        <i class="fas fa-code"></i>
+                        Max Mustermann
+                    </p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <span class=" me-auto ">
+
+                    </span>
+                    <div class="d-flex" role="search">
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+
+                            <a class="nav-link" href="contact.html">Kontakt</a>
+
+                            <a class="btn btn-outline-dark" href="cv.html"">Meine Arbeit</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </nav>
+        </nav>
+
+
+        <!-- Start -->
         <section class="pt-5">
             <div class="container pt-5">
                 <div class="row align-items-center">
@@ -62,46 +62,52 @@
                         <img src="img/peep.svg" alt="Profilbild" class="img-fluid rounded-circle">
                     </div>
                     <div class="col-xs-12 col-md-8 col-lg-10 order-xs-first">
-                        <h1 class="text-xl">Hallo.<br>ich bin <span class="text-primary">Max Mustermann</span>, ein
+                        <h1 class="text-xl"> <span id="typewriter">Hallo.</span><br>ich bin <span
+                                class="text-primary">Max Mustermann</span>, ein
                             Schüler aus der <span class="text-primary">8. Klasse </span> am Hegel Gymnasium <br> in
                             Stuttgart-Vaihingen</h1>
                     </div>
                 </div>
             </div>
         </section>
+
+
+        <!-- Portfolio -->
         <section class="pt-5">
-            <div class="container">
-                <h2 class="h1 text-lg lined">Portfolio</h2>
+            <div class="container portfolio">
+                <a class="text-dark" href="portfolio.html">
+                    <h2 class="h1 text-lg d-inline-flex ">Portfolio</h2>
+                </a>
                 <p class="lead mb-5">Entdeckt meine Leidenschaft für Fotografie, Webentwicklung und Ästhetik</p>
             </div>
             <div class="row">
                 <div class="image-gallery">
-                    <img src="img/emile-perron-xrVDYZRGdw4-unsplash-min.jpg" alt="Image 1">
+                    <img src="img/macbook.jpg" alt="Image 1">
                     <img src="img/webdesign.webp" alt="Image 2">
-                    <img src="img/mehmet-turgut-kirkgoz-cnvhMZ81p6s-unsplash-min.jpg" alt="Image 3">
-                    <img src="img/sincerely-media-l6ysDz2m6nM-unsplash-min.jpg" alt="Image 4">
-                    <img src="img/sincerely-media-oTcaW8Pqv3U-unsplash-min.jpg" alt="Image 5">
-                    <img src="img/liam-charmer-2pF1PZRjjow-unsplash-min.jpg" alt="Image 6">
+                    <img src="img/crop.jpg" alt="Image 3">
+                    <img src="img/man.jpg" alt="Image 4">
+                    <img src="img/man-hand.jpg" alt="Image 5">
+                    <img src="img/mic.jpg" alt="Image 6">
                 </div>
             </div>
         </section>
+
+        <!-- Über Mich -->
         <section class="pt-5">
-            <div class="container">
-                <h2 class="h1 text-lg">
-                    Über mich
-                </h2>
+            <div class="container aboutme">
+                <a class="text-dark" href="cv.html">
+                    <h2 class="h1 text-lg d-inline-flex ">Über mich</h2>
+                </a>
                 <div class="row">
                     <div class="col-lg-6 col-xs-12 col-md-6">
-                        <p class="lead mb-5">Ich bin Max, ein Teenager, der von Technologie begeistert ist und eine
-                            Leidenschaft für Webentwicklung und Ästhetik hat. Bereits von klein auf habe ich mich für
+                        <p class="lead mb-5">
+                            Ich bin Max, ein Schüler mit Leidenschaft für Webentwicklung und Ästhetik. Bereits von klein auf habe ich mich für
                             die Welt des Codes begeistert und habe viel Zeit damit verbracht, mit HTML und CSS zu
-                            experimentieren um visuell beeindruckende Websites zu erstellen. Meine Liebe zur Gestaltung
-                            und Programmierung verschmelzen perfekt und führen zu einer einzigartigen und fesselnden
-                            Online-Präsenz. Während ich weiter lerne und wachse, ist mein ultimatives Ziel, die Lücke
-                            zwischen Form und Funktion zu überbrücken, indem ich
+                            experimentieren um visuell beeindruckende Websites zu erstellen. Mein Ziel ist es, die Lücke zwischen Form und
+                            Funktion zu überbrücken und einen einzigartigen digitalen Fußabdruck zu hinterlassen
                         </p>
                     </div>
-                    <div class="col">
+                    <div class="col skills">
                         <p class="border border-dark rounded p-1 d-inline-flex ">UI Design</p>
                         <p class="border border-dark rounded p-1 d-inline-flex ">UI Design</p>
                         <p class="border border-dark rounded p-1 d-inline-flex ">UX Design</p>
@@ -121,51 +127,52 @@
 
             </div>
         </section>
+
+
         <!-- Contact Section-->
         <section class="py-5">
             <div class="container py-5">
-                <h2 class="h1 text-lg lined mb-5">Contact</h2>
+                <h2 class="h1 text-lg lined mb-2">Kontakt</h2>
+                <p class="lead mb-5">Habt ihr Fragen oder wollt ihr mit mir Kontakt aufnehmen? Schreibt mir eine
+                    Nachricht!</p>
                 <div class="row">
                     <div class="col-lg-6 mb-4 mb-lg-0">
                         <form id="contact-form" method="post" action="mailto:you@yourwebsite.com"
                             class="contact-form form">
                             <div class="row">
                                 <div class="form-group col-lg-6">
-                                    <label for="name" class="font-weight-normal">Your firstname *</label>
-                                    <input id="name" type="text" name="name" placeholder="Enter your firstname" required
+                                    <label for="name" class="font-weight-normal">Vorname *</label>
+                                    <input id="name" type="text" name="name" placeholder="Vorname" required
                                         class="form-control">
                                 </div>
                                 <div class="form-group col-lg-6">
-                                    <label for="surname" class="font-weight-normal">Your lastname *</label>
-                                    <input id="surname" type="text" name="surname" placeholder="Enter your lastname"
-                                        required class="form-control">
-                                </div>
-                                <div class="form-group col-lg-12">
-                                    <label for="email" class="font-weight-normal">Your email *</label>
-                                    <input id="email" type="email" name="email" placeholder="Enter your email" required
+                                    <label for="surname" class="font-weight-normal">Name *</label>
+                                    <input id="surname" type="text" name="surname" placeholder="Name" required
                                         class="form-control">
                                 </div>
                                 <div class="form-group col-lg-12">
-                                    <label for="message" class="font-weight-normal">Your message for us *</label>
-                                    <textarea id="message" rows="4" name="message" placeholder="Enter your message"
-                                        required class="form-control"></textarea>
+                                    <label for="email" class="font-weight-normal">E-mail *</label>
+                                    <input id="email" type="email" name="email" placeholder="E-Mail" required
+                                        class="form-control">
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label for="message" class="font-weight-normal">Deine Nachricht *</label>
+                                    <textarea id="message" rows="4" name="message" placeholder="Nachricht" required
+                                        class="form-control"></textarea>
                                 </div>
                                 <div class="form-group col-lg-12 pt-2">
-                                    <button type="submit" class="btn btn-outline-primary btn-block">Send
+                                    <button type="submit" class="btn btn-dark btn-block">Send
                                         message</button>
                                 </div>
                             </div>
                         </form>
                     </div>
-                    <div class="col-lg-6">
-                        <p class="mb-4">Effects present letters inquiry no an removed or friends. Desire behind latter
-                            me though in. Supposing shameless am he engrossed up additions. My possible peculiar
-                            together to. Desire so better am cannot he up before points. Remember mistaken opinions it
-                            pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed
-                            removed.</p>
-                        <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay
-                            own additions education satisfied the perpetual. If he cause manor happy. Without farther
-                            she exposed saw man led. Along on happy could cease green oh.</p>
+                    <div class="col-lg-6 text-center">
+
+                        <div class="">
+                            <img src="img/peep-sitting.svg" width="40%" alt="Profilbild"
+                                class="img-fluid rounded-circle">
+                        </div>
                         <ul class="list-inline text-center">
                             <li class="list-inline-item"><a href="#" class="social-link facebook"><i
                                         class="fab fa-facebook-f"></i></a></li>
@@ -183,52 +190,13 @@
             </div>
         </section>
 
-
-
-
-
-        <!-- <div class="header">
-            <h1>Max Mustermann</h1>
-            <p>Willkommen auf meiner persönlichen Website! </p>
-            <p>Hier können Sie mehr über mich erfahren und mich auf meinen Sozialen Medien-Kanälen verfolgen.</p>
-        </div>
-        <div class="about-me">
-            <img src="img/photo-1517849845537-4d257902454a-min.jpeg"
-                alt="Profilbild">
-            <div class="about-me-info">
-                <h2>Über mich</h2>
-                <p class="about-me-description">
-                    Ullamco eiusmod adipisicing non ipsum. Elit id est eu ea laborum laboris do fugiat quis dolore
-                    voluptate in esse. Culpa proident occaecat nisi elit voluptate dolor enim voluptate et incididunt.
-                    Velit dolore aute nostrud dolore aliqua laborum aliqua.  Minim veniam qui pariatur nulla minim pariatur eu
-                    consectetur non consectetur consequat ad ipsum tempor. Eiusmod ad ipsum adipisicing proident veniam
-                    cupidatat. Exercitation sunt do elit dolor eiusmod anim aliqua eiusmod elit. Id eiusmod ipsum
-                    pariatur quis et id fugiat.
-                </p>
-                <a href="https://www.facebook.com/your-username" class="social-media-link">
-                    <i class="fa-brands fa-facebook"></i>
-
-                </a>
-                <a href="https://www.instagram.com/your-username" class="social-media-link">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.twitter.com/your-username" class="social-media-link">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-            </div>
-        </div>
-        <div class="social-media-links">
-
-        </div>
-        <div class="image-gallery">
-            <img src="img/emile-perron-xrVDYZRGdw4-unsplash-min.jpg" alt="Image 1">
-            <img src="img/jonathan-arbely-rG4Gq4MCmgU-unsplash-min.jpg" alt="Image 2">
-            <img src="img/mehmet-turgut-kirkgoz-cnvhMZ81p6s-unsplash-min.jpg" alt="Image 3">
-            <img src="img/sincerely-media-l6ysDz2m6nM-unsplash-min.jpg" alt="Image 4">
-            <img src="img/sincerely-media-oTcaW8Pqv3U-unsplash-min.jpg" alt="Image 5">
-            <img src="img/liam-charmer-2pF1PZRjjow-unsplash-min.jpg" alt="Image 6">
-        </div> -->
+        <!-- Footer-->
     </div>
+    <footer>
+        <div class="text-center p-3 bg-dark text-light">
+            © 2020 Copyright Max Mustermann
+        </div>
+    </footer>
 </body>
 
 </html>
